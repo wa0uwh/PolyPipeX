@@ -1,4 +1,4 @@
-<!-- Authors: Grok and Eldon R. Brown - WA0UWH, Rev 2026-11-03 -->
+<!-- Authors: Grok and Eldon R. Brown - WA0UWH, Rev 2026-11-03b -->
 # PolyPipeX
 
 **PolyPipeX** is an Onshape FeatureScript custom feature that sweeps a profile along **any edge** you select.
@@ -6,12 +6,16 @@ Think of it as the reverse of Fillet and Chamfer.
 
 Current release: **V1.00, build B26.11.02.04** (released 2026-11-02).
 
+![PolyPipeX profile matrix](Promo/PolyPipeX_Hero_Matrix.png)
+
 ## Any edge can be a path
 - Sketch lines, arcs and splines, including **construction lines**
 - **Part edges** - pick edges right on an existing part to round, trim or groove an edge in place
 - **Intersection curves** and 3D curves (helix, bridging, projected or composite curves)
 
 Pick several edges at once; connected edges make one continuous pipe.
+
+![Round over, bead and rabbet along part edges](Promo/PolyPipeX_Part_Edge.png)
 
 ## Profile shapes
 Circle, Arc (1-360 deg), Polygon / Star, Rectangle (corner radius), Slot, and Round over.
@@ -23,11 +27,17 @@ New, Add, Remove, Intersect (like Extrude).
 ## Uses
 Washers, edge trim, O-ring grooves, cables and wire bundles, reverse fillets, round-overs.
 
+![O-ring groove](Promo/PolyPipeX_ORing_Groove.png)
+
+![Wire bundles](Promo/PolyPipeX_Wire_Bundles_Crop.png)
+
 ## Path and other options
 - Reverse direction, use part of path (From % / To %), extend / shorten ends
 - Twist by turns over the path, or by pitch
 - Offset and rotate the profile, show profiles, START/END marks, path direction arrows
 - Clear failure messages (for example, profile too wide for the tightest bend)
+
+![PolyPipeX feature dialog](Promo/PolyPipeX_Feature_Dialog.png)
 
 See [RELEASE_NOTES.md](RELEASE_NOTES.md) for the full list.
 
@@ -47,6 +57,7 @@ https://cad.onshape.com/documents/bdedb1c31094967e66258764/v/7a0555a7372ca5b0a80
 - `Docs/PARAM_MAP.md` - parameter map (written for build B26.10.28.03)
 - `Demo/` - notes on the demo document tabs
 - `History/` - earlier PolyPipeX builds
+- `Promo/` - screenshots from the demo document
 
 ## Background
 Based on Onshape's FeatureScript "Pipe" example; grew out of the earlier GrokPipe / PolyPipe work.
